@@ -8,7 +8,7 @@
    <style>
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-image: -webkit-linear-gradient(left,#ffecec,#d5e5ff,#e4fffa,rgb(236, 255, 236));
+      
    backdrop-filter: blur(10px);
     margin: 0;
     padding: 0;
@@ -16,7 +16,15 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
 .container {
+    position:fixed;
             width: 100%;
             margin: 0 auto;
             padding: 20px;
@@ -67,10 +75,12 @@ h1 {
    margin-left: 200px;
 }
 
-.app h2 {
-    color: #212529;
-    font-size: 20px;
-
+h2 {
+    color: #e71010fd;
+    font-size: 28px;
+    font-weight: 1200;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 
 .app p {
@@ -129,6 +139,9 @@ h1 {
         align-items: flex-start;
     }
 }
+#gameWrapContainer{
+    position: relative;
+}
 
 #welcome-message-wrapper {
     position: fixed;
@@ -141,7 +154,7 @@ h1 {
 }
 
 #welcome-message {
-    color: rgb(7, 8, 7);
+    color: rgb(75, 240, 5);
    font-weight: bold;
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 60px 80px;
@@ -179,16 +192,24 @@ p{
    </style>
    </head>
 <body>
-    <br><br><br><center><h2><img src="https://gamesarena.io/wp-content/uploads/2021/03/Ludo.png" width="100px" height="100px"><br>BRO</h2></center><br><br><br><br><br>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="https://static.videezy.com/system/resources/previews/000/038/087/original/abstract_line2.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+
+    <br><br><br><center><h2><img src="https://gamesarena.io/wp-content/uploads/2021/03/Ludo.png" width="100px" height="100px"><br>BRO</h2></center><br><br><br><br>
+  
     <div id="welcome-message-wrapper">
         <video id="welcome-video" autoplay muted loop>
-            <source src="https://videos.pexels.com/video-files/7565825/7565825-hd_1366_720_25fps.mp4" type="video/mp4">
+            <source src="https://static.videezy.com/system/resources/previews/000/042/042/original/Ramdom_Lines_x264.mp4" type="video/mp4">
             
         </video>
         <div id="welcome-message">Welcome to NAIM Bros Play-station!</div>
     </div>
     
-    <div class="gameWrapContainer">
+    <div class="gameWrapContainer" id="gameWrapContainer">
         <div>
       
         <div id="GameWrapper" class="gameWrap" >
@@ -196,7 +217,7 @@ p{
         </div>
        
         </div>
-   <br><br><br><br><br>
+   <br><br><br><br>
           
                         <p>All Right reserved copyright ©2024  <br>
                     Design And 
