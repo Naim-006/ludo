@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/x-icon" href="https://ruqyahbd.org/wp-content/uploads/2018/09/nayeem-360x400.jpg.webp" />
+    <title>Bro's playstation</title>
+   <style>
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-image: -webkit-linear-gradient(left,#ffecec,#d5e5ff,#e4fffa,rgb(236, 255, 236));
+   backdrop-filter: blur(10px);
+    margin: 0;
+    padding: 0;
+    color: #343a40;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
+
+h1 {
+    text-align: center;
+    color: #495057;
+    margin-bottom: 40px;
+}
+
+.app-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.app {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    width: calc(33.333% - 20px);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.app:hover {
+    transform: translateY(-10px);
+    background-color: rgb(253, 229, 167);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-logo {
+    width:100px;
+    height: 100px;
+    border-radius: 8px;
+   margin-left: 200px;
+}
+
+.app h2 {
+    color: #212529;
+    font-size: 20px;
+
+}
+
+.app p {
+    color: #6c757d;
+    margin: 10px 0;
+}
+
+.app a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    margin: 10px;
+}
+
+.app a:hover {
+    background-color: #0056b3;
+   
+}
+
+.app-details {
+    display: none;
+    margin-top: 20px;
+}
+
+.screenshots img {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 5px;
+    border-radius: 8px;
+}
+/* Add this media query for mobile view */
+@media (max-width: 500px) {
+    .container {
+        width: 80%;
+        padding: 10px;
+        
+    }
+
+    .app {
+        width: 100%;
+    }
+
+    .app-logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+    }
+
+    .app-header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+#welcome-message-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10000;
+    animation: fadeInOut 4s forwards;
+}
+
+#welcome-message {
+    color: rgb(7, 8, 7);
+   font-weight: bold;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 60px 80px;
+    border-radius: 10px;
+    font-size: 24px;
+    border: 0px solid silver;
+    box-shadow: 0 8px 16px rgba(0,0,0,1);
+}
+
+#welcome-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(5); }
+    10% { opacity: 1; transform: translate(-50%, -50%) scale(3); }
+    90% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+}
+p{
+
+    text-align: center;
+    
+
+}
+
+
+   </style>
+   </head>
+<body>
+    <br><br><br><center><h2><img src="https://gamesarena.io/wp-content/uploads/2021/03/Ludo.png" width="100px" height="100px"><br>BRO</h2></center><br><br><br><br><br>
+    <div id="welcome-message-wrapper">
+        <video id="welcome-video" autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/7565825/7565825-hd_1366_720_25fps.mp4" type="video/mp4">
+            
+        </video>
+        <div id="welcome-message">Welcome to NAIM Bros Play-station!</div>
+    </div>
+    
+    <div class="gameWrapContainer">
+        <div>
+      
+        <div id="GameWrapper" class="gameWrap" >
+       <center> <iframe id="GameFrame" data-age-rating="0" data-game-url="https://games.construct.net/19977/21000/embed.html?uid=0&amp;o=1" allowfullscreen="true" allow="fullscreen; autoplay; encrypted-media" msallowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" allowpaymentrequest="false" referrerpolicy="unsafe-url" sandbox="allow-same-origin allow-forms allow-scripts allow-pointer-lock allow-orientation-lock allow-popups" scrolling="no" data-game-width="720" data-game-height="1280" src="https://games.construct.net/19977/21000/embed.html?uid=0&amp;o=1" __idm_id__="1196033"></iframe></center>
+        </div>
+       
+        </div>
+   <br><br><br><br><br>
+          
+                        <p>All Right reserved copyright ©2024  <br>
+                    Design And 
+                Developed by <a href="J"> N-Bro IT LTD.</a>  <br> Contact Us <a href="tel:+880 96 0028855".>+880 96 0028855</a>
+            <br><br> 
+            <a href="tel:01619027445"><img src="call.png" alt="" width="40px" height="40px"></a>
+            <a href="https://www.facebook.com/kbauzbl"><img src="facebook.png" alt="Facebook" width="40px" height="40px"></a>
+            <a href=""><img src="github.png" alt="Github"width="40px" height="40px"></a>
+            <a href="mailto:hnayeem264@gmail.com"><img src="mail.png" alt="Email"width="40px" height="40px"></a>
+        </a> </p>
+           
+        </div>
+    </div>
+  
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Show the welcome message and hide it after 4 seconds
+    const welcomeMessageWrapper = document.getElementById('welcome-message-wrapper');
+    setTimeout(() => {
+        welcomeMessageWrapper.style.display = 'none';
+    }, 5000);
+
+    const apps = document.querySelectorAll('.app');
+
+apps.forEach(app => {
+    app.addEventListener('click', function() {
+        const details = this.querySelector('.app-details');
+        const isVisible = details.style.display === 'block';
+        details.style.display = isVisible ? 'none' : 'block';
+    });
+});
+});
+
+    </script>
+</body>
+</html>
